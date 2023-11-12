@@ -13422,9 +13422,9 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-	font-size: 13px;
+	font-size: 0.8rem;
 	font-weight: 700;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	color: #999;
@@ -16848,3 +16848,36 @@ button.bg-laranja:hover{
 	font-size: 2.80rem !important;
 	font-weight: bold !important;
 }
+
+
+/* CSS para os Radio Buttons customizados */
+
+ /* Estilo base para ocultar os botões de rádio padrão */
+ input[type="radio"].custom-radio {
+	display: none;
+  }
+
+  /* Estilo para o rótulo dos botões de rádio */
+  label.custom-label {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: none;
+	color: #fff;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
+
+
+	border-radius: 5px;
+	cursor: pointer;
+	margin: 5px;
+	
+  }
+
+  /* Estilo para quando o botão de rádio está marcado */
+  input[type="radio"].custom-radio:checked + label.custom-label {
+	background-color: #FF9702;
+	border-width: 2px;
+	border-color: #FF9702;
+  }
