@@ -16829,10 +16829,22 @@ body{
 }
 
 .bg-laranja{
-	background-color: #FF9702;
+	background-color: #FF9702 !important;
 }
 
 button.bg-laranja:hover{
-	background-color: #FF6B03;
+	background-color: #FF6B03 !important;
 
+}
+
+.round{
+	background-color: orangered;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.font-big-button{
+	font-size: 2.80rem !important;
+	font-weight: bold !important;
 }
