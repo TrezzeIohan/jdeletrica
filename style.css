@@ -3419,7 +3419,7 @@ html[xmlns] .slider-wrap {
 	display: block;
 	max-width: 100%;
 	max-height: 100%;
-	height: 125px;
+	width: 250px;
 }
 
 .header-size-sm #header-wrap #logo img {
@@ -16803,8 +16803,8 @@ label.checkbox { padding-left: 20px; }
 
 /* Adicionado*/
 
-.custom-logo{
-	height: 75px;
+.custom-logo-img{
+	width: 125px;
 }
 
 .bg-blue{
@@ -16892,7 +16892,11 @@ p{
 		font-size: 2.0rem !important;
 	}
 
-	
+	.icone-redondo{
+		height: 35px !important;
+		width: 35px !important;
+	}
+
   }
 
   @media screen and (min-width: 900px) and (max-width: 1314px) {
@@ -16901,6 +16905,8 @@ p{
 		width: 72px;
 		height: 72px;
 	}
+
+	
 	
   }
 
@@ -16936,3 +16942,87 @@ p{
 	border-width: 2px;
 	border-color: #FF9702;
   }
+
+
+  /* ----------------------------------------------------------------
+	Custom Logo
+-----------------------------------------------------------------*/
+
+
+.custom-logo {
+	position: relative;
+	display: -ms-flexbox;
+	display: flex;
+	align-items: center;
+	-ms-flex-align: center;
+	margin-right: auto;
+	max-height: 100%;
+}
+
+.custom-logo a {
+	width: 100%;
+	color: #000;
+	font-family: 'Poppins', sans-serif;
+	font-size: 36px;
+}
+
+.custom-logo img {
+	display: block;
+	max-width: 100%;
+	max-height: 100%;
+	width: 250px;
+}
+
+.header-size-sm #header-wrap .custom-logo img {
+	height: 40px;
+}
+
+.header-size-md #header-wrap .custom-logo img {
+	height: 40px;
+}
+
+.header-size-lg #header-wrap .custom-logo img {
+	height: 120px;
+}
+
+.custom-logo a.standard-logo {
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.custom-logo a.retina-logo { display: none; }
+
+@media (min-width: 992px) {
+
+	.full-header .custom-logo {
+		padding-right: 30px;
+		
+	}
+
+	#header.transparent-header.full-header .custom-logo { border-right-color: rgba(0,0,0,0.1); }
+
+	.sticky-header-shrink #header-wrap #logo img {
+		height: 60px;
+	}
+
+}
+
+
+/* Escondendo as setas do input de tipo number */
+.input-number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+.input-number {
+    -moz-appearance: textfield;
+
+  }
+
+
+  /* Ícones da segunda página, que substituem o formulário */
+
+  .icone-redondo{
+	height: 75px;
+  }
+
+
+ 
