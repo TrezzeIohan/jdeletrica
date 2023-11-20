@@ -73,8 +73,10 @@
 				<div class="container-fluid p-0">
 					<!-- Sesão da imagem e formulário-->
 					<div class="row pb-2 gx-0">
-						<div class="col-12 col-lg-7 p-0">
-							<img src="assets/images/paineis.jpg" alt="" class="img-fluid">
+						<div class="col-12 col-lg-7 p-0 imagem-do-formulario d-flex flex-column">
+							<div class="col-12 mb-auto"><img src="assets/images/letreiro.jpg" alt="" class="img-fluid "></div>
+							<div class="col-12"><img src="assets/images/diego.png" alt="" class="img-fluid "></div>
+							
 						</div>
 						<div class="col-12 col-lg-5 bg-blue p-0 d-flex justify-content-center align-items-center flex-column p-4">
 							<h1 class="px-3 py-4 fonte-primeira-parte text-light">Conheça uma solução incrível que pode te ajudar a <span class="bold text-light">economizar energia</span></h1>
@@ -83,21 +85,26 @@
 								<h3 class="text-light">SIMULADOR SOLAR</h3>
 								<form class="col-12">
 									<div class="form-group">
+										<h6 class="text-light mb-1">Informe seu Nome*</h6>
 										<input type="text" class="form-control" id="nome" aria-describedby="nome" placeholder="Nome*" required>
 									</div>
 									<div class="form-group">
+										<h6 class="text-light mb-1">Informe seu Celular*</h6>
 										<input type="tel" class="form-control" id="celular" placeholder="Celular*" required>
 									</div>
 									<div class="form-group">
+										<h6 class="text-light mb-1">Informe seu Email*</h6>
 										<input type="email" class="form-control" id="email" placeholder="Email*" required>
 									</div>
 									<div class="form-group">
+										<h6 class="text-light mb-1">Informe seu Segmento*</h6>
 										<select class="form-select" id="Segmento" required>
-											<option>Agronegócio</option>
-											<option>Saúde</option>
-											<option>Construção Civil</option>
-											<option>Varejo</option>
-											<option>Petróleo e Gás</option>
+											<option value="residencial">Residencial</option>
+											<option value="agronegocio">Agronegócio</option>
+											<option value="saude">Saúde</option>
+											<option value="construção civil">Construção Civil</option>
+											<option value="varejo">Varejo</option>
+											<option value="petroleo/gas">Petróleo e Gás</option>
 										</select>
 									</div>
 									<fieldset class="form-group d-flex flex-row">
@@ -121,8 +128,8 @@
 									</fieldset>
 			
 									<fieldset class="form-group d-flex flex-row">
-										<div class="row">
-											<legend class="col-form-label col-12 pt-0 text-light">INFORME SEU CONSUMO MÉDIO MENSAL</legend>
+										<div class="row mw-100">
+											<legend class="col-form-label col-12 pt-0 text-light">Informe seu Consumo Médio Mensal</legend>
 											<div class="col-12 d-flex flex-wrap justify-content-center">
 												<div class="form-check">
 													<input class="form-check-input custom-radio" type="radio" name="radioValor" id="valor1" value="sim" checked>
@@ -170,7 +177,7 @@
 					</div>
 
 					<!-- Sessão de Vídeo -->
-					<div class="row flex-column d-flex align-items-center justify-content-center p-0 p-md-4 bg-laranja">
+					<div class="row flex-column d-flex align-items-center justify-content-center p-0 p-md-4 imagem-do-formulario">
 
 						<!-- Vídeo para versão tablet e desktop-->
 						<div class="w-50 h-50 d-none d-md-block">
@@ -182,12 +189,66 @@
 							<iframe width="560" height="315" src="https://www.youtube.com/embed/ZyvUXc641u8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="mh-50"></iframe>
 						</div>
 
-						<div class="d-flex flex-row align-items-center justify-content-between p-4 w-75">
-							<div class="round"></div>
-							<div class="round"></div>
-							<div class="round"></div>
-							<div class="round"></div>
-							<div class="round"></div>
+						<!-- Ícones na versão de Tablet e Desktop -->
+						<div class="flex-wrap align-items-center justify-content-between p-4 w-75 d-none d-md-block d-md-flex">
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="icon-dollar icon-3x"></i></div>
+								<p class="text-light text-center p-2 bold">Independência <br> Financeira</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="bi-hammer icon-3x"></i></div>
+								<p class="text-light text-center p-2 bold">Baixa <br> Manutenção</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="icon-leaf1 icon-3x"></i></div>
+								<p class="text-light text-center p-2 bold">Energia <br> Sustentável</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="bi-cash-coin icon-3x"></i></div>
+								<p class="text-light text-center p-2 bold">Alta <br> Rentabilidade</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"> <i class="icon-time icon-4x"></i></div>
+								<p class="text-light text-center p-2 bold">Vida Útil de <br> 25 anos</p>
+							</div>
+							
+							
+						</div>
+
+						<!-- Ícones na versão de Celular -->
+						<div class="d-flex flex-wrap align-items-center justify-content-between p-4 w-75 d-md-none">
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="icon-dollar icon-2x"></i></div>
+								<p class="text-light text-center p-2 bold">Independência <br> Financeira</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="bi-hammer icon-2x"></i></div>
+								<p class="text-light text-center p-2 bold">Baixa <br> Manutenção</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="icon-leaf1 icon-2x"></i></div>
+								<p class="text-light text-center p-2 bold">Energia <br> Sustentável</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"><i class="bi-cash-coin icon-2x"></i></div>
+								<p class="text-light text-center p-2 bold">Alta <br> Rentabilidade</p>
+							</div>
+
+							<div class="d-flex flex-column align-items-center justify-content-center">
+								<div class="round d-flex align-items-center justify-content-center"> <i class="icon-time icon-2x"></i></div>
+								<p class="text-light text-center p-2 bold">Vida Útil de <br> 25 anos</p>
+							</div>
+							
+							
 						</div>
 						
 					</div>

@@ -16815,13 +16815,25 @@ label.checkbox { padding-left: 20px; }
 	font-size: 1.80rem;
 }
 
-.bold{
+.fonte-segunda-parte{
+	font-size: 2.0rem;
+}
+.p-segunda-parte{
+	font-size: 1.15rem;
+}
+
+.black{
 	font-weight: 900;
+}
+
+.divider::after, .divider::before {
+  height: 3px;
+  
 }
 
 body{
 	font-family: 'Roboto', sans-serif;
-}s
+}
 
 .form-check-input:checked {
 	background-color: #333 !important;
@@ -16838,7 +16850,7 @@ button.bg-laranja:hover{
 }
 
 .round{
-	background-color: orangered;
+	background-color: #fff;
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -16848,6 +16860,38 @@ button.bg-laranja:hover{
 	font-size: 2.80rem !important;
 	font-weight: bold !important;
 }
+
+.imagem-do-formulario{
+	background-image: url("assets/images/bgret.jpg");
+  background-size: cover; /* or "contain" depending on what you want */
+  background-position: center center;
+  background-repeat: no-repeat;
+  
+}
+
+p{
+	font-size: 0.80rem;
+}
+
+.bold{
+	font-weight: bold !important;
+}
+
+
+
+
+
+@media (max-width: 550px) {
+
+	.round {
+		width: 50px;
+		height: 50px;
+	}
+
+	.font-big-button{
+		font-size: 2.0rem !important;
+	}
+  }
 
 
 /* CSS para os Radio Buttons customizados */
